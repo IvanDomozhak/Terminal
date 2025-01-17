@@ -19,3 +19,19 @@
 18) вывести несколько последних строк из текстового файла - tail -n 3 1.txt (название файла)
 19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - less файл.txt
 20) вывести дату и время - date
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5006/terminal-hw-request - curl http://162.55.220.72:5006/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+-touch myscript.bin
+-vim myscript.bin
+#!/bin/bash
+cd hw_git
+mkdir t1 t2 t3
+cd t1
+touch 1.txt 2.txt 3.txt 1.json 2.json
+mkdir g1 g2 g3
+ls -la
+mv 2.txt 2.json ../t2
+-./myscript.bin
